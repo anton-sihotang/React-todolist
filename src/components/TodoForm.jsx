@@ -18,7 +18,7 @@ const TodoForm = ({ addTodo }) => {
 
   return (
     <section className="add">
-      <form className="add-form" onSubmint={handleFormsubmit}>
+      <form className="add-form" onSubmit={handleFormsubmit}>
         <input
           type="text"
           className="add-input"
@@ -31,7 +31,7 @@ const TodoForm = ({ addTodo }) => {
   );
 };
 
-TodoForm.propTypes = {
+TodoForm.PropTypes = {
   addTodo: PropTypes.func.isRequired
 };
 
