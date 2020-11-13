@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-const TodoForm = () => {
+const TodoForm = ({ addTodo }) => {
   const [value, setValue] = useState("");
 
   const handleFormsubmit = (e) => {
@@ -13,7 +13,6 @@ const TodoForm = () => {
     }
 
     addTodo(value);
-    alert(value);
     setValue("");
   };
 
