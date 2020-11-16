@@ -11,19 +11,19 @@ const TodoList = () => {
     { text: "belajar Props di React!" },
     { text: "belajar React Hooks!" }
   ]);
+  const [showAdd, setShowAdd] = useState(false);
 
   const addTodo = (value) => {
     const addedTodo = [...todos, { text: value }];
 
     setTodos(addedTodo);
   };
-
-  console.log("todos", todos);
+  const showAddToggle = () => setShowAdd(!showAdd);
 
   return (
     <Paper>
-      <Header />
-      <TodoForm addTodo={addTodo} />
+      <Header showAddToggle={showAddToggle} showAdd={showAdd} />
+      <TodoForm addTodo={addTodo} showAdd={showAdd} />
       <Todos todos={todos} />
     </Paper>
   );
