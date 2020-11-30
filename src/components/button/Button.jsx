@@ -1,4 +1,6 @@
-import React from "react";
+/** @jsx jsx */
+// import React from "react";
+import { jsx } from "@emotion/react";
 import PropTypes from "prop-types";
 import cx from "classnames";
 
