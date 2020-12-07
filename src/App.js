@@ -1,6 +1,7 @@
+/** @jsx jsx */
 import React from "react";
 import "./styles.css";
-import { ThemeProvider } from "emotion-theming";
+import { jsx, ThemeProvider } from "@emotion/react";
 
 import TodoList from "./pages/TodoList";
 
@@ -8,7 +9,12 @@ const theme = {
   color: {
     primary: {
       black: "#484848",
-      red: "#e062662"
+      red: "#e06262"
+    }
+  },
+  background: {
+    color: {
+      primary: "#f2eecb"
     }
   }
 };

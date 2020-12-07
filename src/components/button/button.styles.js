@@ -1,17 +1,20 @@
 import { css } from "@emotion/react";
 
-export const button = ({ color, align }) => {
+export const button = ({ color, align, theme }) => {
   let textColor;
+  const {
+    color: { primary }
+  } = theme;
 
   switch (color) {
     case "black":
-      textColor = "#4848448";
+      textColor = primary.black;
       break;
     case "red":
-      textColor = "#e06262";
+      textColor = primary.red;
       break;
     default:
-      textColor = "#484848";
+      textColor = primary.black;
   }
 
   return css`
@@ -25,5 +28,6 @@ export const button = ({ color, align }) => {
     cursor: pointer;
     background: unset;
     border: unset;
+    outline: unset;
   `;
 };
