@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, useTheme, ThemeProvider, withTheme } from "@emotion/react";
+import { jsx, useTheme } from "@emotion/react";
 // import React from "react";
 import PropTypes from "prop-types";
 

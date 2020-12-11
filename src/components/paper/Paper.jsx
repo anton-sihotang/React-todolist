@@ -1,6 +1,6 @@
 /** @jsx jsx */
 // import React from "react";
-import { jsx, useTheme, ThemeProvider, withTheme } from "@emotion/react";
+import { jsx, useTheme } from "@emotion/react";
 import PropTypes from "prop-types";
 
 // import styles from "./paper.module.css";

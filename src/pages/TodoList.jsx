@@ -15,7 +15,7 @@ const TodoList = () => {
 
       setTodos(addedTodo);
     } else {
-      alert("only 10 todos is allowed !");
+      alert("only 11 todos are allowed !");
     }
   };
   const completeTodo = (index) => {
