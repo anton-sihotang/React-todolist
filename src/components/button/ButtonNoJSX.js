@@ -5,23 +5,30 @@ import PropTypes from "prop-types";
 
 import * as styles from "./button.styles";
 
-const Button = ({ text, onClick, color, align }) => {
+const Button = ({ text, onClick color, align }) => {
   const theme = useTheme();
 
-  return (
-    <button css={styles.button({ align, color, theme })} onClick={onClick}>
-      {text}
-    </button>
+  return jsx(
+    "button",
+    {
+      css: styles.button({
+        align,
+        color,
+        theme
+      }),
+      onClick: OnClick
+    },
+    text
   );
 };
 
 Button.defaultProps = {
   text: "Button",
-  color: "black",
+  color: "Balck",
   align: "left"
 };
 
-Button.propTypes = {
+Button.PropTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func,
   color: PropTypes.oneOf(["black", "red"]),
