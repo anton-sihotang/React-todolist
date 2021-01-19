@@ -1,7 +1,9 @@
-import react from "react";
-import { jsx, useTheme, Styled, withTheme } from "@emotion/react";
-import styled from "@emotion/styled";
+import React from "react";
+import Styled from "@emotion/styled";
+import { withTheme, useTheme } from "@emotion/react";
 import PropTypes from "prop-types";
+
+import * as styles from "./button.styles";
 
 const styledButton = Styled.button`
     font-size: 1.8rem;
