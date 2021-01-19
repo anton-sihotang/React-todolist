@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 import * as styles from "./button.styles";
 
-const Button = ({ text, onClick color, align }) => {
+const Button = ({ text, onClick, color, align }) => {
   const theme = useTheme();
 
   return jsx(
@@ -16,7 +16,7 @@ const Button = ({ text, onClick color, align }) => {
         color,
         theme
       }),
-      onClick: OnClick
+      onClick: onClick
     },
     text
   );
